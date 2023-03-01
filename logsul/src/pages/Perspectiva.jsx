@@ -1,8 +1,19 @@
+import styled from 'styled-components';
+import Slider from '../components/Slider';
+
 
 export default function Perspectiva(){
-    return(<>
+    const contPersp = styled.div`
+    
+    `
+    return(
+    <>
     <title>LOGSUL PERSPECTIVAS</title>
-    PERSPECTIVAS
-
-    </>)
+     <Slider 
+      nome=" PERSPECTIVAS"
+      quant={10}
+      urls="./src/assets/img/foto"
+     />     
+    </>
+    )
 }
