@@ -13,7 +13,7 @@ export default function Footer(){
     ` 
     return(
 <FooterSt>
-Por: Marcelo Olimpio
+Marcelo Olimpio — Copyright © 2023. 
 </FooterSt>
 
     )

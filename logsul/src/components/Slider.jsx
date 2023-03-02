@@ -23,6 +23,7 @@ export default function Slider(props){
         height: 80vh;
         width: 100vw;
         background-size: cover;
+        background-position: center;
         animation: fundo 2s;
             @keyframes fundo {
                 0%  {opacity:0.0}
