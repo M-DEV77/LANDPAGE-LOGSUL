@@ -19,12 +19,20 @@ export default function Porque(){
         justify-content: flex-start;
         align-items: center;
        }
+       .boxPorque1{
+        font-size: 2vw;
+        font-weight: bold;
+        padding: 0.5vw;
+        background-color: ${cor.vermelho1};
+        color: ${cor.branca1};
+        text-shadow: ${cor.textoShadow};
+       }
     ` 
     return(<>
     <title>LOGSUL POR QUE ITAJAÍ</title>
     <ContPorque>
     <div className="boxPorque1 row">
-    POR QUE ITAJAÍ 
+    POR QUE ITAJAÍ? 
     </div>
     <div className="boxPorque2 row">
     <Card 

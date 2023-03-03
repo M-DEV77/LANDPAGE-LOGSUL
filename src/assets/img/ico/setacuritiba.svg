@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Creator: CorelDRAW 2021 (64 Bit) -->
+<?xml-stylesheet href="setacuritiba.css" type="text/css"?>
 <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="400px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
 viewBox="0 0 300 399.999"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
  <defs>
-  <font id="FontID0" horiz-adv-x="722" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="700">
+  <font id="FontID0" horiz-adv-x="722" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
 	<font-face 
 		font-family="Arial">
 		<font-face-src>
@@ -22,14 +23,6 @@ viewBox="0 0 300 399.999"
    <glyph unicode="T" horiz-adv-x="610" d="M234 0l0 595.004 -211.996 0 0 121.004 568.004 0 0 -121.004 -211.004 0 0 -595.004 -145.004 0z"/>
    <glyph unicode="U" horiz-adv-x="722" d="M73.0039 716.008l144.992 0 0 -388.004c0,-61.6654 1.84252,-101.504 5.33858,-119.669 6.16535,-29.3386 20.6693,-52.9961 43.6654,-70.6654 23.1732,-17.8346 54.6732,-26.6693 94.6654,-26.6693 40.5,0 71.1732,8.33858 91.8307,25.1693 20.6693,16.8307 33,37.3346 37.1693,61.8307 4.16929,24.4961 6.33071,64.9961 6.33071,121.665l0 396.343 145.004 0 0 -376.512c0,-85.9961 -3.82677,-146.823 -11.6693,-182.327 -7.83071,-35.5039 -22.1575,-65.5039 -43.1575,-90 -20.8346,-24.5079 -48.8386,-43.8307 -83.8346,-58.3346 -35.1732,-14.5039 -80.8346,-21.8386 -137.339,-21.8386 -68.1614,0 -119.835,7.84252 -154.996,23.6693 -35.1732,15.8386 -63,36.3307 -83.5039,61.6654 -20.5039,25.3346 -33.8386,51.6732 -40.3346,79.5 -9.49606,41.0079 -14.1614,101.669 -14.1614,181.843l0 382.335z"/>
   </font>
-  <style type="text/css">
-   <![CDATA[
-    @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
-    .fil0 {fill:#E94D59}
-    .fil1 {fill:#F7FCFC}
-    .fnt0 {font-weight:bold;font-size:32px;font-family:'Arial'}
-   ]]>
-  </style>
  </defs>
  <g id="Layer_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>

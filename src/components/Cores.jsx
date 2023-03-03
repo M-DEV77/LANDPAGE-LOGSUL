@@ -28,6 +28,7 @@ export default class Cores{
     static boxShadow3 = "-2px -4px 2px -4px #000000;"
     static textoShadow= "-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);"
     static filterShadow= 'drop-shadow(2px 1px 2px #1D3557);'
+    static filterShadow1= 'drop-shadow(1px 1px 1px #1D3557);'
     
     
 
