@@ -35,26 +35,36 @@
 .footer{
     position: fixed;
     z-index: 5;
-    top: 90vh;
-    width:50vw;
+    top: 94vh;
+    width:100vw;
     padding-left: 1vw;
     padding-right: 1vw;
     align-items: center;
     justify-content: space-between;
     background-color: #1D3557;
-    height: 10vh;
+    height: 6vh;
     color: #F7FCFC;
-    -webkit-box-shadow: 0.8px -1px 3px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0.8px -1px 3px 0px rgba(0,0,0,0.75);
-    box-shadow: 0.8px -1px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0.8px -1px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0.8px -1px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0.8px -1px 1px 0px rgba(0,0,0,0.75);
+    
 
 }
 .copy{
     height: 10vh;
     align-items: center;
 }
+.copy a {
+    font-size: 0.8vw;
+    text-decoration: none;
+    color: #D4EDEE;
+}
 
 .rodape{
     font-size: 1.5vw;
     color:#A2BDCE;
+}
+.footerCont {
+    align-items: center;
+    margin-right: 3vw;
 }

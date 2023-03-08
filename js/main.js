@@ -47,10 +47,26 @@ if(vPosition>posicao2*1.7 && vPosition<=posicao2*3){
 }else{
   document.getElementById("local").style.opacity=0;
   document.getElementById('navBar').style.backgroundColor='transparent'
+  
+}
+ 
+
+//posição pagina 4 acesso----------------------
+if(vPosition>posicao2*2.7 && vPosition<=posicao2*4){
+  document.getElementById("acesso").style.opacity=1;
+  document.getElementById('rodape').innerText="| PROJETO: ACESSO"
+}else{
+  document.getElementById("acesso").style.opacity=0;
+  
 
 }
  
+
+
+
 });
+
+
 
 
 

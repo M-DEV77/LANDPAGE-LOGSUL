@@ -39,6 +39,7 @@
     background-color: #9CC0FA;
     opacity: 0;
     transition: 3s;
+    width: 100vw;
 }
 
 #logsul{
@@ -51,8 +52,6 @@
 }
 .pontosCont{
     position: relative;
-    font-size: 1.4vw;
-    font-weight: bold;
     color: #1D3557;
     top: 20vh;
     width: 40vw;
@@ -61,15 +60,30 @@
     display: flex;
     flex-direction: column;
     filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+   
 }
 .pontoBox{
+   
     position: relative;
-    margin-top: 2vh;
+    left: 40%;
+    margin-top: 1vh;
+    width: 20vw;
+    background-color: #ffffff;
+    ;
+    padding: 0.3vw;
+    border-radius: 3px;
+
 }
 .pontoIco img{
     width: 3vw;
     margin-right: 1vw;
     
+}
+.pontoTxt{
+     font-size: 1vw;
+     font-weight: bold;
+     
+     
 }
 
 
