@@ -1,0 +1,76 @@
+*{                   
+--cor1:    #E63946;
+--cor1-90: #E94D59;
+--cor1-80: #EB616B;
+--cor1-70: #EE757E;
+--cor1-60: #F08890;
+--corMar:#9CC0FA;
+--cor2: #F1FAEE;
+--cor4: #A8DADC;
+
+--cor4: #457B9D;
+--cor4-90: #5889A7;
+--cor4-80: #6A95B1;
+--cor4-70: #7DA3BB;
+--cor4-60: #8FB0C4;
+
+--cor5: #1D3557;
+--cor5-90: #344A68;
+--cor5-80: #4A5D79;
+--cor5-70: #61728A;
+--cor5-60: #77869A;
+    /*50%*/
+--cor1-50: #F39CA3;
+--cor2-50: #F1FAEE;
+--cor3-50: #D4EDEE;
+--cor4-50: #A2BDCE;
+--cor5-50: #8E9AAB;
+    /*10%*/
+--cor1-10: #FDECED;
+--cor2-10: #F1FAEE;
+--cor3-10: #F7FCFC;
+--cor4-10: #EDF2F6;
+--cor5-10: #E9EBEF;
+}
+.local{
+    background-image: url("../img/mapa.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #9CC0FA;
+    opacity: 0;
+    transition: 3s;
+}
+
+#logsul{
+    position: relative;
+    top: 66vh;
+    left: 13vw;
+    width: 4vw;
+    filter: drop-shadow(13px 1px 3px rgb(0 0 0 / 0.4));
+
+}
+.pontosCont{
+    position: relative;
+    font-size: 1.4vw;
+    font-weight: bold;
+    color: #1D3557;
+    top: 20vh;
+    width: 40vw;
+    padding: 1vw;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(1px 1px 1px rgb(0 0 0 / 0.4));
+}
+.pontoBox{
+    position: relative;
+    margin-top: 2vh;
+}
+.pontoIco img{
+    width: 3vw;
+    margin-right: 1vw;
+    
+}
+
+
+
