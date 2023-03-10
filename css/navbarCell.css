@@ -32,22 +32,4 @@
 --cor4-10: #EDF2F6;
 --cor5-10: #E9EBEF;
 }
-.cell{
-    position: relative;
-    background-color: #D4EDEE;
-    font-size: 3vw;
-    padding: 2vw;
-    top: 16vh;
-    display:none;
-    flex-direction: column;
-}
 
-.cell  a{
-    color: #1D3557;
-}
-
-.btnCell{
-    display: none;
-    flex-direction: column;
-}
-    

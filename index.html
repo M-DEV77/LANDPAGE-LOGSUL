@@ -1,318 +1,1218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="./css/navbarCell.css">
-    <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./css/porque.css">
-    <link rel="stylesheet" href="./css/local.css">
-    <link rel="stylesheet" href="./css/acesso.css">
-    <link rel="stylesheet" href="./css/implanta.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <title id="pageTitulo">LOGSUL</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="shortcut icon" href="./img/logo/logo.svg" type="image/x-icon">
+  
+   <title id="titulo">LOGSUL</title> 
 </head>
 <body>
-<div id="nav" class="navBar row">
-    <!---menu do celular ------>
-     <div class="cell">
-        <a id="perspectivasBtn" onclick="pageOpen('perspectivasBtn',0)"class="link">PERSPECTIVAS</a>
-        <a id="porqueBtn" onclick="pageOpen('porqueBtn',1)" class="link">POR QUE ITAJAÍ</a>
-        <a id="localBtn" onclick="pageOpen('localBtn',2)"   class="link">LOCALIZAÇÃO</a>
-        <a id="acessoBtn" onclick="pageOpen('acessoBtn',3)"class="link">ACESSO</a>
-        <a id="implantaBtn" onclick="pageOpen('implantaBtn',4)"class="link">IMPLANTAÇÃO</a>
-        <a id="infoTecBtn" onclick="pageOpen('infoTecBtn',5)"class="link">INFORMAÇÕES TÉCNICAS</a>
-        <a id="carecterBtn" onclick="pageOpen('carecterBtn',6)"class="link">CARACTERÍSTICAS</a>
-        <a id="contatoBtn" onclick="pageOpen('contatoBtn',7)"class="link">CONTATO</a>
-    </div> 
-    <!---menu do celular ------>
-        <div class="contLogo row">
-            <img src="./img/logo/logo.svg" alt="logo" class="logo">
-            <div id="pageNome" class="pageNome">PREMOAÇO</div>
-        </div>
-        <div class="menuDesck">
-                <a id="perspectivasBtn" onclick="pageOpen('perspectivasBtn',0)"class="link">PERSPECTIVAS</a>
-                <a id="porqueBtn" onclick="pageOpen('porqueBtn',1)" class="link">POR QUE ITAJAÍ</a>
-                <a id="localBtn" onclick="pageOpen('localBtn',2)"   class="link">LOCALIZAÇÃO</a>
-                <a id="acessoBtn" onclick="pageOpen('acessoBtn',3)"class="link">ACESSO</a>
-                <a id="implantaBtn" onclick="pageOpen('implantaBtn',4)"class="link">IMPLANTAÇÃO</a>
-                <a id="infoTecBtn" onclick="pageOpen('infoTecBtn',5)"class="link">INFORMAÇÕES TÉCNICAS</a>
-                <a id="carecterBtn" onclick="pageOpen('carecterBtn',6)"class="link">CARACTERÍSTICAS</a>
-                <a id="contatoBtn" onclick="pageOpen('contatoBtn',7)"class="link">CONTATO</a>
-        </div> 
-        <button class="btnCell">
-fdsfsdf
-
+   <nav id="navbars" class="navbar   navbar-expand-lg navbar-light ">
+      <div class="container-fluid ">
+         
+         <a class="navbar-brand" href="#">
+            <img class="logo" src="./img/logo/logo.svg" alt="" width="30" height="24">
+          </a>
+        <a class="navbar-brand" href="#">PROJETO LOGSUL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">PERSPECTIVAS</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#porque">POR QUE ITAJAÍ</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#local">LOCALIZAÇÃO</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#acesso">ACESSO</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#planta">IMPLANTAÇÃO</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#infoTec">INFORMAÇÕES TÉCNICAS</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#caracter">CARACTERÍSTICAS</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contato">CONTATO</a>
+            </li>
+         </ul>
+        </div>
+      </div>
+      
+        
+      
+      
+    </nav>
+    <div id="barraStatus"></div>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="./img/slider/foto1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider/foto2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider/foto3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+         <img src="./img/slider/foto4.jpg" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="./img/slider/foto5.jpg" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="./img/slider/foto6.jpg" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+          <img src="./img/slider/foto7.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider/foto8.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider/foto9.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider/foto10.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider/foto11.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+         <img src="./img/slider/foto12.jpg" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="./img/slider/foto14.jpg" class="d-block w-100" alt="...">
+       </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+<div id="porque" class="container-fluid porque cont">
+<div class="space"></div>
+   <div class="box1 col justify-content-lg-center">
+   <p class="h1">POR QUE ITAJAÍ?</p>
+
+       <div class="row m-1 justify-content-between">
 
         
-       
-</div>
-
-
-    <div id="perspectivas" class="container perspectivas">
-         <div id="slider" class="slider row">
-            <button id="btnSl1" onclick="slider(-1)" class="btnSl">
-              <svg xmlns="http://www.w3.org/2000/svg" height="48" 
-              viewBox="0 96 960 960" width="48"><path class="arrow"
-               d="M413.566 989.566 0 576l413.566-413.566L483.132 
-               233l-343 343 343 343-69.566 70.566Z"/></svg>
-            </button>
+            <div class="card p-0 col-md-2">
+               <img src="./img/card/card1.jpg" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Localização Estratégica</h5>
+            
+               </div>
+               <ul class="list-group list-group-flush">
+                 <li class="list-group-item">12 km do Porto de Itajaí</li>
+                 <li class="list-group-item">100 km Florianópolis</li>
+                 <li class="list-group-item">27 km do Aeroporto Internacional de Navegantes</li>
+               </ul>
+               
+             </div>
 
          
+         
 
-            
-           <button id="btnSl2" onclick="slider(1)" class="btnSl">
-             <svg xmlns="http://www.w3.org/2000/svg" height="48"
-              viewBox="0 96 960 960" width="48"><path class="arrow" 
-              d="M304 987.566 234.434 917l343-343-343-343L304
-               160.434 717.566 574 304 987.566Z"/></svg>
-            
-           </button>
-         </div>
-    </div>
-    <div id="porque" class="container porque">
-
-      <div class="cardBox">
-           <div class="contCards">
-               <div class="card col">
-                <div class="cardtitulo row">
-                   <div class="cardNumero">1</div>
-                   <div class="cardNome">
-                    Localização Estratégica
-                   </div>
-                </div>
-                  <div class="row">
-                    <div class="card1">
-                       <div class="contCard">12 km do Porto de Itajaí;</div>
-                       <div class="contCard">100 km Florianópolis;</div>
-                       <div class="contCard">27 km do Aeroporto Internacional de Navegantes.</div>
-                    </div>
-                    <img class="card2" src="./img/card/card1.jpg" alt="card"/>
-                  </div>  
-               </div>
-
-      
-               <div class="card col">
-                <div class="cardtitulo row">
-                   <div class="cardNumero">2</div>
-                   <div class="cardNome">
-                     Logística Eficiente
-                   </div>
-                </div>
-                  <div class="row">
-                    <div class="card1">
-                       <div class="contCard">O Porto de Itajaí é responsável pela maior  parte das exportações da Região Sul do Brasil;</div>
-                       <div class="contCard">2° Porto no ranking de movimentações de  contêiner, somente atrás do Porto de Santos;</div>
-                       <div class="contCard">Fácil acesso ao Mercosul;</div>
-                       <div class="contCard">Cortada pela BR – 101, principal via de  entrada ao Estado de SC.</div>
-                    </div>
-                    <img class="card2" src="./img/card/card2.jpg" alt="card"/>
-                       
-
-
-                   
-                  </div>  
-               </div>
-
-               <div class="card col">
-                  <div class="cardtitulo row">
-                     <div class="cardNumero">3</div>
-                     <div class="cardNome">
-                      Município
-                     </div>
-                  </div>
-                    <div class="row">
-                      <div class="card1">
-                         <div class="contCard">Alta qualidade de vida;</div>                    
-                         <div class="contCard">Importante Município para o Estado;</div>                      
-                         <div class="contCard">Estado entre os melhores índices de ID-H do Brasil;</div>
-                         <div class="contCard">Economia em Crescimento;</div>
-                         <div class="contCard">6° município mais populoso do Estado;</div>
-                      </div>
-                      <img class="card2" src="./img/card/card3.jpg" alt="card"/>
-                    </div>  
-                 </div>
-         </div>  
-
-         <div class="contCards">
-            <div class="card col">
-             <div class="cardtitulo row">
-                <div class="cardNumero">4</div>
-                <div class="cardNome">
-                  Desenvolvimento Econômico
-                </div>
-             </div>
-               <div class="row">
-                 <div class="card1">
-                    <div class="contCard">O município é referencia nacional em infraestrutura  voltada à instalação de empresas;</div>
-                    <div class="contCard">Presença de muitas das principais empresas do Mundo;</div>
-                    <div class="contCard">2° maior renda per capita do Estado de SC;</div>
-                    <div class="contCard">Incentivos fiscais;</div>
-                 </div>
-                 <img class="card2" src="./img/card/card4.jpg" alt="card"/>
-               </div>  
+           <div class="card p-0 col-md-2">
+            <img src="./img/card/card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Logística Eficiente</h5>
+         
             </div>
-
-   
-            <div class="card col">
-             <div class="cardtitulo row">
-                <div class="cardNumero">5</div>
-                <div class="cardNome">
-                  Mão de Obra especializada
-                </div>
-             </div>
-               <div class="row">
-                 <div class="card1">
-                    <div class="contCard">5 instituições de ensino superior;</div>
-                    <div class="contCard">A Universidade do Vale do Itajaí  é a maior de Santa Catarina;</div>
-                    <div class="contCard">Polo industrial e Naval;</div>
-                    <div class="contCard">Taxa de alfabetização acima dos 97%;</div>
-                 </div>
-                 <img class="card2" src="./img/card/card5.jpg" alt="card"/>
-                    
-
-
-                
-               </div>  
-            </div>
-
-           
-      </div>  
-      
-    </div>
-    </div> 
-    <div id="local"  class="container local">
-      <a href="https://goo.gl/maps/1dUhtWZgukneHVWY7"><img src="./img/ico/logsul.svg" alt="" class="logsul" id="logsul"></a>
-      
-      <div class="pontosCont">
-
-         <div class="pontoBox row">   
-          <div class="pontoIco">
-             <img src="./img/ico/ico1.svg" alt="">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">O Porto de Itajaí é responsável pela maior  parte das exportações da Região Sul do Brasil</li>
+              <li class="list-group-item">2° Porto no ranking de movimentações de  contêiner, somente atrás do Porto de Santos</li>
+              <li class="list-group-item">Fácil acesso ao Mercosul</li>
+              <li class="list-group-item">Cortada pela BR – 101, principal via de  entrada ao Estado de SC</li>
+            </ul>
           </div>
-          <div class="pontoTxt">
-            06 km – BR 101 (Rod. Governador Mario Covas)
-          </div>  
-         </div>
 
-         <div class="pontoBox row">   
-            <div class="pontoIco">
-               <img src="./img/ico/ico2.svg" alt="">
-            </div>
-            <div class="pontoTxt">
-               12 km – Porto de Itajaí
-            </div>  
-           </div>
 
-           <div class="pontoBox row">   
-            <div class="pontoIco">
-               <img src="./img/ico/ico3.svg" alt="">
-            </div>
-            <div class="pontoTxt">
-               27 km – Aeroporto Internacional de Navegantes
-            </div>  
-           </div>
-  
-           <div class="pontoBox row">   
-              <div class="pontoIco">
-               <img src="./img/ico/ico4.svg" alt="">
-              </div>
-              <div class="pontoTxt">
-               Distribuição para o Porto de Itajaí sem pedágio
-              </div>  
-             </div>
-
-             <div class="pontoBox row">   
-               <div class="pontoIco">
-                  <img src="./img/ico/ico5.svg" alt="">
-               </div>
-               <div class="pontoTxt">
-                  Mão de obra abundante
-               </div>  
-              </div>
-
-              <div class="pontoBox row">   
-               <div class="pontoIco">
-                  <img src="./img/ico/ico6.svg" alt="">
-               </div>
-               <div class="pontoTxt">
-                Região portuária e industrial consolidada   
-               </div>  
-              </div>
-      </div>
-
-    </div>
-    <div id="acesso" class="container row acesso"> 
-     <div class="contAcesso">
-
-        <div class="acessoBox row">
-            <div class="acessoLinha1">
-            </div>
-            <div class="acessoTxt">
-               Vindo da BR-101/Porto/Centro
-            </div>
-          
-         </div>
-
-        <div class="acessoBox row">
-            <div class="acessoLinha2">
-            </div>
-            <div class="acessoTxt">
-               Em direção a BR-101/Porto/Centro
-            </div>
+           <div class="card p-0 col-md-2">
+            <img src="./img/card/card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Município</h5>
          
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Alta qualidade de vida</li>
+              <li class="list-group-item">Importante Município para o Estado</li>
+              <li class="list-group-item">Estado entre os melhores índices de ID-H do Brasil</li>
+              <li class="list-group-item">Economia em Crescimento</li>
+              <li class="list-group-item">6° município mais populoso do Estado</li>
+            </ul> 
+          </div>
+
+          <div class="card p-0 col-md-2">
+            <img src="./img/card/card4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> Desenvolvimento Econômico</h5>
+         
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">O município é referencia nacional em infraestrutura  voltada à instalação de empresas</li>
+              <li class="list-group-item">Presença de muitas das principais empresas do Mundo</li>
+              <li class="list-group-item">2° maior renda per capita do Estado de SC</li>
+              <li class="list-group-item">Incentivos fiscais</li>
+            </ul>
+          </div>
+
+          <div class="card p-0 col-md-2">
+            <img src="./img/card/card5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mão de Obra especializada</h5>
+         
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">5 instituições de ensino superior</li>
+              <li class="list-group-item">A Universidade do Vale do Itajaí  é a maior de Santa Catarina</li>
+              <li class="list-group-item">Polo industrial e Naval</li>
+              <li class="list-group-item">Taxa de alfabetização acima dos 97%</li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        
       </div>
+    </div>
+
+    
+    <div id="local" class="local desck container-fluid cont">
+   <div class="space"></div>
+    <p class="h1">LOCALIZAÇÃO</p>
+    <div class="row ">
+     <div class="col-sm-12 local1 ">
+      <ul class="list-group float-end shadow-lg">
+         <li class="list-group-item"><img src="./img/ico/ico1.svg" alt="" class="ico"> 06 km – BR 101 (Rod. Governador Mario Covas)</li>
+         <li class="list-group-item"><img src="./img/ico/ico2.svg" alt="" class="ico"> 12 km – Porto de Itajaí</li>
+         <li class="list-group-item"><img src="./img/ico/ico3.svg" alt="" class="ico"> 27 km – Aeroporto Internacional de Navegantes</li>
+         <li class="list-group-item"><img src="./img/ico/ico4.svg" alt="" class="ico"> Distribuição para o Porto de Itajaí sem pedágio</li>
+         <li class="list-group-item"><img src="./img/ico/ico5.svg" alt="" class="ico"> Mão de obra abundante</li>
+         <li class="list-group-item"><img src="./img/ico/ico6.svg" alt="" class="ico"> Região portuária e industrial consolidada </li>
+       </ul>
+
 
      </div>
     </div>
-    <div  id="implanta" class="container implanta">
-       <div class="tableBox bdr">
-            <div class="TtituloG bdr">Quadro de Áreas</div>
-            
-               <div class="tRow "> 
-                     <div class="tbtR bdr">Áreas</div>
-                     <div class="tbtR bdr">M²</div>
-                     <div class="tbtR bdr"></div>
-               </div>
-               <div class="Ttitulo bdr"></div>
-            <div class="Ttitulo bdr">Galpão n°1</div>
-            <div class="Ttitulo bdr"></div>
-               <div class="tRow"> 
-                  <div class="tbt bdr">Térreo Galpão</div>
-                  <div class="tbt bdr">65.290,00 m²</div>  
-               </div>
-               <div class="tRow"> 
-                  <div class="tbt bdr">Alpendre</div>
-                  <div class="tbt bdr">2.251,38 m²</div>  
-               </div>
 
-       </div> 
-       
-    </div>
-    <div id="infoTec" class="container infoTec">
-        
+
 
     </div>
-    <div id="caracterTec" class="container caracterTec">
-       
+    
+    <div id="acesso" class="container-fluid acesso cont">
+      <div class="space"></div>
+      <p class="h1">ACESSO</p>
+       <div class="row">
+          <div class="col-sm-11">
+            <div class="card float-end shadow" style="width: 30rem;">
+               <ul class="list-group list-group-flush">
+                 <li class="list-group-item">Vindo da BR-101/Porto/Centro <div class="acessoLinha1"></div></li>
+                 <li class="list-group-item">Em direção a BR-101/Porto/Centro<div class="acessoLinha2"></div></li>
+                 
+               </ul>
+             </div>
+
+
+          </div>
+
+
+       </div>
+   
+
+
+
+
+
     </div>
-    <div id="contato"  class="container contato">
+     <div id="planta" class="planta container-fluid planta cont">
+      <div class="space"></div>
+      <p class="h1 plantaTxt">IMPLANTAÇÃO</p>
+<!-------------------modal galpão 1------------------------------------------->
+<div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal1">Galpão-1</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQuatro" aria-expanded="false" aria-controls="collapseThree">
+           <strong> Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseQuatro" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+               <!-------------------tabela--------------------------------------> 
+            </div>
+          </div>
+           <!-------------------carousel-------------------------------------->
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+           <!-------------------carousel-------------------------------------->
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-------------------modal galpão 1------------------------------------------->
+
+ <!-------------------modal galpão 2------------------------------------------->
+<div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2">Galpão-2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal galpão 2------------------------------------------->
+
+<!-------------------modal galpão 3------------------------------------------->
+<div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal3">Galpão3</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal galpão 3------------------------------------------->
+
+<!-------------------modal galpão 4------------------------------------------->
+<div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal4">Galpão-4</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal galpão 4------------------------------------------->
+
+<!-------------------modal galpão 5------------------------------------------->
+<div class="modal fade" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2">Galpão-2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal galpão 5------------------------------------------->
+
+<!-------------------modal guarita------------------------------------------->
+<div class="modal fade" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2">Galpão-2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal guarita------------------------------------------->
+
+<!-------------------modal convivência--------------------------------------->
+<div class="modal fade" id="modal7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2">Galpão-2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal convivência--------------------------------------->
+
+<!-------------------modal administrativo------------------------------------>
+<div class="modal fade" id="modal8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="modal2">Galpão-2</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseThree">
+           <strong>Detalhes</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+            <!-------------------tabela-------------------------------------->
+             <table class="table table-hover table-bordered">
+                 <thead>
+                   <tr>
+                      <th scope="col-1">N°:</th>
+                      <th scope="col-6">Nome:</th>
+                      <th scope="col-5">Área/Total:</th>
+                     
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Pav. Térreo:</td>
+                     <td>65.290,02m²</td>
+                    
+                   </tr> 
+                   <tr>
+                      <th scope="row">2</th>
+                      <td>Alpendre:</td>
+                      <td>2.251,38m²</td>
+                      <tr>
+                         <th scope="row">3</th>
+                         <td><strong>Total:</strong></td>
+                         <td><strong>67.541,40m²</strong></td>
+                    </tr>     
+                 </tbody>
+               </table>
+             <!-------------------tabela-------------------------------------->   
+            </div>
+          </div>
+          <!-------------------carousel-------------------------------------->
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/mapa2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto13.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/slider/foto17.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          <!-------------------carousel-------------------------------------->   
+          </div>
+        </div>
+       <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------------modal administrativo------------------------------------>
+
+
+
+      <div class="row">
+        <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1920px" height="800px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1920 800"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID1" horiz-adv-x="667" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="/" horiz-adv-x="277" d="M0 -12.013l208.013 740.095 70.8379 0 -208.013 -740.095 -70.8379 0z"/>
+   <glyph unicode="A" horiz-adv-x="667" d="M-1.48834 0l274.67 716.069 104.184 0 291.537 -716.069 -107.834 0 -82.8509 217.014 -301.531 0 -77.6772 -217.014 -100.498 0zm205.993 294.018l244.052 0 -74.7005 198.516c-22.5023,60.3486 -39.4764,110.173 -51.3123,149.543 -9.85139,-46.7055 -23.0338,-92.5251 -39.5119,-137.849l-78.5276 -210.21z"/>
+   <glyph unicode="B" horiz-adv-x="667" d="M72.9995 0l0 716.069 268.716 0c54.6433,0 98.4785,-7.1582 131.647,-21.6872 33.027,-14.4936 58.8603,-36.8187 77.5354,-66.9753 18.8169,-30.0148 28.1721,-61.518 28.1721,-94.5096 0,-30.511 -8.36305,-59.3564 -24.8411,-86.3591 -16.5135,-27.0027 -41.5318,-48.8317 -75.0194,-65.4869 43.339,-12.6863 76.6849,-34.3381 99.8605,-65.0263 23.3173,-30.511 34.976,-66.6564 34.976,-108.33 0,-33.6648 -7.1582,-64.8491 -21.3329,-93.6945 -14.1747,-28.81 -31.6449,-50.9934 -52.4817,-66.6564 -20.8368,-15.5213 -47.0244,-27.3571 -78.3505,-35.3303 -31.5032,-8.00868 -70.0228,-12.013 -115.665,-12.013l-273.217 0zm95.0057 415.034l154.858 0c41.9924,0 72.1845,2.83493 90.328,8.32761 24.1678,7.19364 42.3468,19.1712 54.5016,35.8619 12.1902,16.6552 18.3562,37.492 18.3562,62.652 0,23.8489 -5.66987,44.8274 -17.1868,62.8292 -11.3043,18.179 -27.6406,30.6881 -48.8317,37.3502 -21.1557,6.66209 -57.5137,9.99314 -108.826,9.99314l-143.2 0 0 -217.014zm0 -331.014l178.353 0c30.6881,0 52.1628,1.16941 64.6719,3.47279 21.6872,3.8626 40.008,10.3475 54.6788,19.5256 14.6708,9.14266 26.6838,22.5023 36.1808,40.008 9.49702,17.5057 14.1747,37.6692 14.1747,60.4904 0,26.8256 -6.83928,50.0011 -20.695,69.8457 -13.6431,19.8445 -32.6726,33.6648 -56.9821,41.6735 -24.1678,8.00868 -59.1792,11.9776 -104.68,11.9776l-165.702 0 0 -246.994z"/>
+   <glyph unicode="C" horiz-adv-x="722" d="M587.044 251.175l95.0057 -23.9906c-19.8091,-77.8543 -55.4938,-136.998 -106.983,-177.857 -51.5249,-40.823 -114.531,-61.3409 -189.019,-61.3409 -77.0039,0 -139.691,15.663 -188.027,47.1662 -48.3356,31.3614 -85.0125,76.8621 -110.173,136.36 -25.16,59.6753 -37.8464,123.497 -37.8464,191.854 0,74.5233 14.1747,139.514 42.6657,195.008 28.5265,55.5292 69.0306,97.6989 121.512,126.509 52.5171,28.8454 110.35,43.1973 173.356,43.1973 71.6884,0 131.86,-18.179 180.514,-54.6788 48.8317,-36.4998 82.8509,-87.6703 102.022,-153.689l-93.0212 -22.0062c-16.5135,52.021 -40.6813,90.0091 -72.1845,113.681 -31.5032,23.8489 -71.1568,35.6847 -118.996,35.6847 -54.8559,0 -100.853,-13.1824 -137.671,-39.5119 -36.8541,-26.3294 -62.8646,-61.837 -77.6772,-106.168 -14.9897,-44.5084 -22.5023,-90.3635 -22.5023,-137.53 0,-60.8447 8.82373,-114 26.5066,-159.359 17.6475,-45.5007 45.1463,-79.3427 82.4965,-101.845 37.3502,-22.5023 77.6772,-33.6648 121.193,-33.6648 52.9778,0 97.6634,15.3441 134.34,45.855 36.6769,30.6527 61.4826,76.0116 74.4879,136.325z"/>
+   <glyph unicode="G" horiz-adv-x="777" d="M412.022 281.013l0 84.0203 303.054 0 0 -265.35c-46.5283,-36.9959 -94.5096,-65.0263 -144.015,-83.6659 -49.505,-18.6751 -100.357,-28.0304 -152.342,-28.0304 -70.3418,0 -134.199,15.0251 -191.712,45.1817 -57.3365,30.0148 -100.817,73.6728 -129.982,130.513 -29.3416,57.0176 -44.0123,120.662 -44.0123,190.862 0,69.6685 14.4936,134.659 43.658,195.185 29.1644,60.3132 71.0151,105.176 125.694,134.34 54.6433,29.3416 117.65,44.0123 189.019,44.0123 51.6666,0 98.5139,-8.36305 140.329,-25.1955 41.8507,-16.8324 74.665,-40.1497 98.3367,-69.9874 23.8489,-30.0148 41.8507,-69.1724 54.1827,-117.366l-85.5087 -23.3173c-10.8436,36.3226 -24.1678,64.9908 -40.008,86.0048 -15.9819,20.8368 -38.6614,37.492 -68.3219,50.0011 -29.5187,12.5091 -62.3685,18.8523 -98.5139,18.8523 -43.1618,0 -80.5121,-6.69753 -112.192,-19.8445 -31.5032,-13.1824 -56.8404,-30.511 -76.3306,-52.1628 -19.3484,-21.5101 -34.3381,-45.1817 -45.0046,-70.8379 -18.179,-44.5084 -27.3217,-92.5251 -27.3217,-144.369 0,-63.9986 10.9854,-117.508 32.8143,-160.67 22.0062,-43.0201 54.0055,-75.0194 95.8562,-95.8562 41.9924,-20.8368 86.5009,-31.326 133.667,-31.326 41.0002,0 81.0082,8.00868 120.024,23.8489 38.9803,15.9819 68.4991,32.8143 88.6625,50.9934l0 134.163 -210.033 0z"/>
+   <glyph unicode="a" horiz-adv-x="556" d="M405.041 64.9908c-32.6726,-27.8178 -64.1758,-47.3079 -94.3324,-58.8249 -30.192,-11.5169 -62.5103,-17.1513 -97.2028,-17.1513 -56.9821,0 -100.817,13.8203 -131.505,41.6381 -30.6527,27.676 -45.9968,63.1836 -45.9968,106.345 0,25.3372 5.84705,48.5128 17.3285,69.5267 11.6587,21.0139 26.8256,37.6692 45.5007,50.3201 18.8523,12.6863 39.8308,22.3605 63.3607,28.8454 17.3285,4.50046 43.4808,8.82373 78.315,13.1824 71.0151,8.32761 123.532,18.4979 157.02,30.1566 0.354367,12.013 0.496113,19.6673 0.496113,22.8212 0,35.6847 -8.32761,60.8447 -24.9828,75.5155 -22.5023,19.8445 -56.0254,29.6605 -100.357,29.6605 -41.4963,0 -72.149,-7.33539 -91.8518,-21.829 -19.8091,-14.4936 -34.3027,-40.1497 -43.8351,-77.181l-86.0048 12.013c7.8315,36.8541 20.695,66.6918 38.6968,89.3358 18.0018,22.6795 43.9769,40.008 77.9961,52.3399 33.842,12.1902 73.3539,18.3562 118.004,18.3562 44.3313,0 80.5121,-5.17375 108.33,-15.663 27.676,-10.5247 48.1939,-23.5299 61.1991,-39.3701 13.0053,-15.8047 22.1479,-35.8265 27.4988,-59.9943 2.83493,-14.9897 4.32327,-41.9924 4.32327,-80.831l0 -116.693c0,-81.5043 1.84271,-132.994 5.49268,-154.823 3.50823,-21.8644 10.8436,-42.7012 21.5101,-62.6874l-91.9936 0c-8.85916,18.4979 -14.529,40.1852 -17.0096,64.9908zm-7.01646 195.043c-31.9993,-13.0053 -79.9805,-24.0261 -144.015,-33.027 -36.3226,-5.13832 -61.9787,-10.9854 -77.0039,-17.4703 -14.9897,-6.52035 -26.5066,-16.0174 -34.6571,-28.3493 -8.18587,-12.5091 -12.332,-26.3294 -12.332,-41.6735 0,-23.1756 8.82373,-42.6657 26.6484,-58.187 17.8601,-15.4858 43.8706,-23.3173 78.0315,-23.3173 33.842,0 63.9986,7.33539 90.5052,22.1479 26.3294,14.6708 45.8196,34.8697 58.1516,60.3486 9.53246,19.8445 14.1747,49.0089 14.1747,87.5285l0.496113 31.9993z"/>
+   <glyph unicode="c" horiz-adv-x="500" d="M405.041 190.011l86.0048 -11.9776c-9.49702,-59.1792 -33.4876,-105.353 -72.3262,-138.876 -38.8386,-33.4876 -86.6781,-50.1429 -143.2,-50.1429 -70.8379,0 -127.855,23.1401 -170.84,69.4913 -43.1618,46.3511 -64.6719,112.689 -64.6719,199.012 0,56.0254 9.31984,104.857 27.8178,146.85 18.4979,41.8507 46.6701,73.3539 84.6936,94.1906 37.8464,20.9785 78.9883,31.5032 123.674,31.5032 56.1671,0 102.341,-14.1747 138.026,-42.6657 35.8265,-28.5265 58.8249,-69.0306 68.818,-121.371l-85.0125 -13.0053c-8.15043,34.8342 -22.5023,61.0219 -43.339,78.6694 -20.6596,17.5057 -45.6424,26.3649 -74.984,26.3649 -44.3313,0 -80.3349,-15.8402 -108.188,-47.5206 -27.676,-31.8221 -41.4963,-81.8232 -41.4963,-150.499 0,-69.6685 13.3242,-120.201 40.008,-151.704 26.8256,-31.5032 61.6598,-47.3079 104.503,-47.3079 34.6571,0 63.5025,10.4893 86.5009,31.6449 23.1756,21.0139 37.8464,53.5094 44.0123,97.3445z"/>
+   <glyph unicode="d" horiz-adv-x="556" d="M401.037 0l0 65.8413c-32.8498,-51.1705 -81.1854,-76.8267 -145.007,-76.8267 -41.3546,0 -79.3427,11.3043 -113.858,34.1609 -34.6571,22.6795 -61.4826,54.5016 -80.6538,95.1829 -19.0295,40.823 -28.5265,87.6703 -28.5265,140.648 0,51.7021 8.68198,98.5139 25.8333,140.684 17.364,42.0279 43.1973,74.3461 77.6772,96.7066 34.3381,22.5023 73.035,33.6648 115.524,33.6648 31.326,0 59.1792,-6.66209 83.4888,-19.8445 24.345,-13.1824 44.1895,-30.511 59.5336,-51.6666l0 257.518 87.9892 0 0 -716.069 -82.0004 0zm-278.036 258.865c0,-66.3374 13.9975,-115.842 42.1696,-148.692 28.0304,-32.8143 61.1991,-49.1506 99.3644,-49.1506 38.4842,0 71.1568,15.663 98.1595,46.989 26.8256,31.326 40.3269,79.1655 40.3269,143.518 0,70.6607 -13.6431,122.682 -41.142,155.85 -27.3571,33.1687 -61.1991,49.6468 -101.349,49.6468 -39.1929,0 -71.8301,-15.8047 -98.195,-47.6623 -26.1523,-31.8221 -39.3347,-82.0004 -39.3347,-150.499z"/>
+   <glyph unicode="i" horiz-adv-x="222" d="M66.0185 616.066l0 100.002 87.9892 0 0 -100.002 -87.9892 0zm0 -616.066l0 519.041 87.9892 0 0 -519.041 -87.9892 0z"/>
+   <glyph unicode="l" horiz-adv-x="222" d="M63.9986 0l0 716.069 88.0247 0 0 -716.069 -88.0247 0z"/>
+   <glyph unicode="m" horiz-adv-x="833" d="M66.0185 0l0 519.041 78.9883 0 0 -73.3184c16.1591,25.3372 37.8464,45.8196 64.8491,61.1637 27.0027,15.4858 57.6554,23.1756 92.1707,23.1756 38.3425,0 69.8457,-8.00868 94.3324,-23.8489 24.5222,-16.0174 41.8507,-38.1653 51.8438,-66.8335 41.3546,60.4904 94.8639,90.6824 160.847,90.6824 51.6666,0 91.5329,-14.1747 119.173,-42.6657 27.8532,-28.5265 41.8507,-72.3617 41.8507,-131.541l0 -355.855 -88.0247 0 0 326.691c0,35.0114 -2.97668,60.3486 -8.64654,75.8344 -5.66987,15.5213 -16.0174,27.8532 -31.1843,37.3502 -14.9897,9.49702 -32.6726,14.1747 -52.8361,14.1747 -36.6769,0 -67.0107,-12.1902 -91.1785,-36.358 -24.1678,-24.3095 -36.1454,-63.1481 -36.1454,-116.48l0 -301.212 -88.0247 0 0 336.861c0,39.0158 -7.1582,68.3573 -21.5101,87.8475 -14.3164,19.4902 -37.8109,29.3416 -70.3418,29.3416 -24.6639,0 -47.4851,-6.52035 -68.4991,-19.5256 -21.0139,-12.9698 -36.1808,-31.9993 -45.6779,-57.1593 -9.31984,-24.9828 -13.9975,-61.1637 -13.9975,-108.33l0 -269.035 -87.9892 0z"/>
+   <glyph unicode="n" horiz-adv-x="556" d="M66.0185 0l0 519.041 78.9883 0 0 -73.6728c38.0235,56.5215 93.0212,84.6936 164.851,84.6936 31.326,0 59.9943,-5.66987 86.182,-16.8324 26.1523,-11.198 45.8196,-26.0105 58.8249,-44.1895 13.0053,-18.179 22.1833,-39.8308 27.3571,-64.8491 3.15386,-16.3363 4.81939,-44.8274 4.81939,-85.5087l0 -318.682 -87.9892 0 0 315.351c0,35.8619 -3.33105,62.6874 -10.1703,80.3703 -6.83928,17.6475 -19.0295,31.8221 -36.358,42.4886 -17.3285,10.4893 -37.8109,15.8402 -61.1637,15.8402 -37.3502,0 -69.4913,-11.8358 -96.6712,-35.6847 -27.1799,-23.6717 -40.6813,-68.818 -40.6813,-135.155l0 -283.21 -87.9892 0z"/>
+   <glyph unicode="o" horiz-adv-x="556" d="M32.9915 259.538c0,95.8207 26.6838,166.836 80.1932,213.01 44.5084,38.3425 99.01,57.5137 163.186,57.5137 71.1568,0 129.486,-23.3528 174.844,-70.0228 45.1817,-46.4929 67.8258,-111.023 67.8258,-193.165 0,-66.6918 -9.99314,-119.032 -29.9794,-157.197 -20.0217,-38.1653 -49.1861,-67.8258 -87.5285,-89.0169 -38.1653,-21.1557 -80.016,-31.6449 -125.162,-31.6449 -72.6806,0 -131.364,23.1401 -176.191,69.6685 -44.8274,46.4929 -67.1879,113.504 -67.1879,200.855zm90.0091 -0.177183c0,-66.3374 14.529,-116.02 43.5162,-148.834 29.1644,-33.027 65.6641,-49.505 109.854,-49.505 43.658,0 79.9805,16.478 109.18,49.6468 28.9872,33.1687 43.4808,83.6659 43.4808,151.527 0,63.9986 -14.6708,112.511 -43.8351,145.326 -29.1644,33.027 -65.4869,49.505 -108.826,49.505 -44.1895,0 -80.6893,-16.3363 -109.854,-49.1506 -28.9872,-32.8498 -43.5162,-82.3548 -43.5162,-148.515z"/>
+   <glyph unicode="r" horiz-adv-x="333" d="M64.9908 0l0 519.041 79.0237 0 0 -79.4844c20.1635,36.8187 38.8386,61.1637 55.9899,72.8223 17.1868,11.8358 36.0036,17.6829 56.5215,17.6829 29.6605,0 59.8525,-9.35528 90.5052,-27.8532l-31.326 -81.1854c-21.3329,12.013 -42.6657,18.0018 -63.9986,18.0018 -19.1712,0 -36.358,-5.81161 -51.5249,-17.3285 -15.1669,-11.4815 -26.0105,-27.4988 -32.4954,-47.9812 -9.85139,-31.1843 -14.6708,-65.3452 -14.6708,-102.518l0 -271.197 -88.0247 0z"/>
+   <glyph unicode="s" horiz-adv-x="500" d="M31.0071 155l86.997 14.0329c4.85482,-34.8697 18.4979,-61.518 40.8585,-80.1932 22.3251,-18.4979 53.6511,-27.8178 93.6591,-27.8178 40.5041,0 70.5189,8.15043 90.1863,24.6639 19.4902,16.3363 29.3416,35.6493 29.3416,57.8326 0,19.8445 -8.85916,35.5075 -26.3649,46.8473 -12.332,7.8315 -42.3114,17.6475 -90.0091,29.8377 -64.3175,16.1591 -108.826,30.1566 -133.844,41.9924 -24.8057,12.013 -43.658,28.3139 -56.486,49.3278 -12.8281,20.8368 -19.3484,44.0123 -19.3484,69.3495 0,23.1756 5.35094,44.5084 15.8402,64.1758 10.6664,19.6673 25.0183,36.0036 43.1618,49.0089 13.6786,9.99314 32.3537,18.4979 55.8482,25.479 23.6717,7.01646 48.8317,10.5247 75.8344,10.5247 40.6813,0 76.3306,-5.84705 107.019,-17.6829 30.8299,-11.6587 53.5094,-27.676 68.1801,-47.6623 14.4936,-20.1635 24.6639,-47.0244 30.1566,-80.6893l-86.0048 -11.9776c-3.82716,27.0027 -15.1669,48.1584 -33.842,63.3253 -18.6751,15.1669 -45.0046,22.6795 -79.1655,22.6795 -40.1852,0 -68.9952,-6.66209 -86.182,-20.0217 -17.1513,-13.3242 -25.8333,-28.9872 -25.8333,-46.8118 0,-11.3397 3.50823,-21.6872 10.6664,-30.8653 7.1582,-9.31984 18.3562,-17.1513 33.6648,-23.3173 8.85916,-3.33105 34.5153,-10.8436 77.5,-22.5023 62.0142,-16.5135 105.353,-30.192 130.017,-40.6813 24.6639,-10.4893 44.0123,-26.0105 58.0098,-45.9968 14.1747,-20.1635 21.1911,-45.1817 21.1911,-75.1612 0,-29.1998 -8.5048,-56.6987 -25.6916,-82.532 -17.1513,-25.8333 -41.8153,-45.8196 -73.9917,-59.9943 -32.3537,-14.1747 -68.8534,-21.1557 -109.535,-21.1557 -67.3297,0 -118.819,13.9975 -154.149,41.8153 -35.3658,27.995 -57.8681,69.3495 -67.684,124.17z"/>
+   <glyph unicode="t" horiz-adv-x="277" d="M257.022 78.4922l12.013 -77.6417c-24.6639,-5.17375 -46.8473,-7.86694 -66.1957,-7.86694 -31.8221,0 -56.486,5.03201 -74.1689,15.1669 -17.5057,10.1703 -29.8377,23.3528 -36.9959,39.8662 -7.1582,16.478 -10.6664,51.1705 -10.6664,104.007l0 299.015 -64.9908 0 0 68.0029 64.9908 0 0 128.352 88.0247 52.8361 0 -181.188 87.9892 0 0 -68.0029 -87.9892 0 0 -304.011c0,-25.1955 1.48834,-41.3546 4.6422,-48.5128 3.01212,-7.1582 8.00868,-12.8281 15.0251,-17.1868 6.98102,-4.14609 16.9742,-6.30773 29.9794,-6.30773 9.67421,0 22.5023,1.16941 38.3425,3.47279z"/>
+   <glyph unicode="u" horiz-adv-x="556" d="M405.041 0l0 77.181c-40.3269,-58.8603 -95.0057,-88.1664 -164.178,-88.1664 -30.511,0 -59.002,5.81161 -85.5087,17.4703 -26.5066,11.8358 -46.174,26.5066 -59.002,44.1895 -12.8281,17.8246 -21.829,39.5119 -27.0027,65.168 -3.50823,17.3285 -5.35094,44.6856 -5.35094,82.0004l0 321.198 88.0247 0 0 -287.179c0,-45.855 1.80727,-76.8621 5.3155,-92.6669 5.49268,-23.1756 17.1868,-41.1774 35.1886,-54.3598 17.8246,-13.147 39.8308,-19.8445 66.1602,-19.8445 26.3294,0 50.9934,6.69753 74.0272,20.1989 22.9984,13.5014 39.3347,31.9993 48.9735,55.1394 9.53246,23.1756 14.3518,57.0176 14.3518,101.207l0 277.504 87.9892 0 0 -519.041 -78.9883 0z"/>
+   <glyph unicode="v" horiz-adv-x="500" d="M207.836 0l-195.823 519.041 94.1552 0 111.023 -310.85c12.013,-33.5231 23.1756,-68.3573 33.3459,-104.503 7.8315,27.3217 18.6397,60.1714 32.8143,98.6557l115.346 316.697 90.3635 0 -196.532 -519.041 -84.6936 0z"/>
+   <glyph unicode="ç" horiz-adv-x="500" d="M405.041 190.011l86.0048 -11.9776c-9.49702,-59.1792 -33.4876,-105.353 -72.3262,-138.876 -38.8386,-33.4876 -86.6781,-50.1429 -143.2,-50.1429 -70.8379,0 -127.855,23.1401 -170.84,69.4913 -43.1618,46.3511 -64.6719,112.689 -64.6719,199.012 0,56.0254 9.31984,104.857 27.8178,146.85 18.4979,41.8507 46.6701,73.3539 84.6936,94.1906 37.8464,20.9785 78.9883,31.5032 123.674,31.5032 56.1671,0 102.341,-14.1747 138.026,-42.6657 35.8265,-28.5265 58.8249,-69.0306 68.818,-121.371l-85.0125 -13.0053c-8.15043,34.8342 -22.5023,61.0219 -43.339,78.6694 -20.6596,17.5057 -45.6424,26.3649 -74.984,26.3649 -44.3313,0 -80.3349,-15.8402 -108.188,-47.5206 -27.676,-31.8221 -41.4963,-81.8232 -41.4963,-150.499 0,-69.6685 13.3242,-120.201 40.008,-151.704 26.8256,-31.5032 61.6598,-47.3079 104.503,-47.3079 34.6571,0 63.5025,10.4893 86.5009,31.6449 23.1756,21.0139 37.8464,53.5094 44.0123,97.3445zm-205.355 -276.016l25.3372 86.0048 64.9908 0 -16.1591 -52.021c27.8532,-3.33105 48.8317,-11.8358 63.0064,-25.6561 14.1747,-13.6786 21.1557,-28.9872 21.1557,-45.8196 0,-24.345 -11.8004,-45.855 -35.4721,-64.5302 -23.5299,-18.6751 -59.1792,-27.995 -106.7,-27.995 -26.8256,0 -50.4972,0 -70.8379,0l4.99657 62.0142c21.1911,-0.673297 36.4998,-0.992226 46.5283,-0.992226 30.8299,0 52.6589,4.14609 65.168,12.6509 9.49702,6.52035 14.3164,14.3518 14.3164,23.8489 0,5.81161 -1.80727,10.9854 -5.66987,15.4858 -3.64998,4.50046 -10.4893,8.5048 -20.4824,11.6587 -10.1703,3.1893 -26.8256,5.03201 -50.1783,5.35094z"/>
+   <glyph unicode="ê" horiz-adv-x="556" d="M420.031 168.005l91.0013 -11.9776c-14.1392,-52.8361 -40.6458,-94.0135 -79.3427,-123.178 -38.6614,-29.1998 -87.9892,-43.8351 -148.161,-43.8351 -75.6927,0 -135.687,23.3173 -180.018,69.9874 -44.3313,46.4929 -66.5146,112.015 -66.5146,196.177 0,87.0324 22.3605,154.681 67.1879,202.698 44.8274,48.1584 103.014,72.1845 174.526,72.1845 69.1724,0 125.658,-23.5299 169.494,-70.6961 43.8351,-47.1662 65.8413,-113.504 65.8413,-199.012 0,-5.17375 -0.177183,-13.0053 -0.496113,-23.3173l-386.543 0c3.33105,-56.8404 19.3484,-100.534 48.3356,-130.69 28.8454,-30.1566 65.0263,-45.3235 108.188,-45.3235 32.1765,0 59.6753,8.46936 82.3548,25.479 22.8212,17.0096 40.823,44.1895 54.1472,81.5043zm-288.029 141.038l289.021 0c-3.82716,43.658 -14.9897,76.3306 -33.1687,98.1595 -27.8178,33.842 -64.1404,50.8516 -108.649,50.8516 -40.3624,0 -74.1689,-13.5014 -101.703,-40.5041 -27.3217,-27.0027 -42.4886,-63.1836 -45.5007,-108.507zm145.007 357.024l-54.5016 -83.0281 -100.002 0 104.503 137.034 93.0212 0 111.519 -137.034 -100.002 0 -54.537 83.0281z"/>
+  </font>
+  <font id="FontID0" horiz-adv-x="722" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="700">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial Negrito"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="-" horiz-adv-x="333" d="M55.9899 191.004l0 137.034 270.027 0 0 -137.034 -270.027 0z"/>
+   <glyph unicode="1" horiz-adv-x="556" d="M393.028 0l-136.998 0 0 518.367c-50.0011,-46.989 -109.003,-81.8232 -177.006,-104.326l0 125.021c35.8265,11.6587 74.665,33.842 116.48,66.6564 42.0279,32.6726 70.6961,70.8379 86.3591,114.354l111.165 0 0 -720.073z"/>
+   <glyph unicode="2" horiz-adv-x="556" d="M506.035 127.005l0 -127.005 -481.017 0c5.13832,48.3356 20.8368,94.0135 46.8118,137.175 26.0105,43.1618 77.5,100.498 154.185,172.01 61.837,57.6909 99.6833,96.8484 113.681,117.366 18.8523,28.3139 28.3493,56.3443 28.3493,84.1621 0,30.6881 -8.18587,54.1827 -24.6639,70.6607 -16.3363,16.5135 -39.0158,24.6994 -67.8612,24.6994 -28.6683,0 -51.3477,-8.68198 -68.3219,-26.0105 -16.8324,-17.1868 -26.5066,-45.855 -29.1644,-86.0048l-137.034 13.6431c8.18587,75.6927 33.6648,130.017 76.6849,163.044 42.9847,32.8143 96.6712,49.3278 161.166,49.3278 70.6961,0 126.19,-19.1712 166.694,-57.3365 40.3269,-38.1653 60.4904,-85.6858 60.4904,-142.526 0,-32.3182 -5.81161,-63.0064 -17.3285,-92.3479 -11.4815,-29.1644 -29.8377,-59.6753 -54.9977,-91.6746 -16.5135,-21.3329 -46.6701,-51.8438 -90.0091,-91.6746 -43.5162,-39.8308 -71.0151,-66.1602 -82.4965,-79.3427 -11.6941,-13.0053 -21.0139,-25.8333 -28.1721,-38.1653l273.004 0z"/>
+   <glyph unicode="3" horiz-adv-x="556" d="M37.9881 189.834l133.029 16.1946c4.18153,-34.0192 15.4858,-60.0297 34.0192,-78.0315 18.4979,-18.0018 40.823,-27.0027 66.9753,-27.0027 28.1721,0 51.8438,10.8436 71.1922,32.3537 19.1712,21.5101 28.8454,50.4972 28.8454,87.1742 0,34.5153 -9.17809,62.0142 -27.676,82.1776 -18.4979,20.1635 -41.0002,30.3338 -67.684,30.3338 -17.5057,0 -38.3425,-3.50823 -62.652,-10.3475l15.1669 111.342c36.9959,-0.992226 65.168,7.19364 84.6582,24.345 19.4902,17.0096 29.1644,39.8308 29.1644,68.3573 0,24.1678 -7.1582,43.339 -21.5101,57.8326 -14.3164,14.3164 -33.3105,21.5101 -57.1593,21.5101 -23.4945,0 -43.5162,-8.18587 -59.9943,-24.5222 -16.6907,-16.3363 -26.6838,-40.1497 -30.3338,-71.5112l-126.013 21.5101c8.82373,43.658 22.0062,78.4922 39.8308,104.68 17.6475,26.0105 42.4886,46.4929 74.1689,61.518 31.6804,14.8125 67.3297,22.3251 106.664,22.3251 67.3651,0 121.371,-21.5101 162.016,-64.6719 33.5231,-35.3303 50.3555,-75.3383 50.3555,-119.847 0,-63.0064 -34.3381,-113.504 -103.192,-151.031 41.0002,-8.82373 73.6728,-28.4911 98.3367,-59.1438 24.5222,-30.6881 36.8541,-67.684 36.8541,-111.023 0,-62.8292 -22.9984,-116.516 -68.8534,-160.847 -45.8196,-44.3313 -102.837,-66.5146 -171.159,-66.5146 -64.6719,0 -118.358,18.6751 -160.847,56.1671 -42.7012,37.3502 -67.3651,86.182 -74.2044,146.672z"/>
+   <glyph unicode="4" horiz-adv-x="556" d="M311.028 0l0 144.015 -292.033 0 0 119.492 309.716 455.574 115.346 0 0 -455.042 88.9814 0 0 -120.024 -88.9814 0 0 -144.015 -133.029 0zm0 264.039l0 244.513 -163.682 -244.513 163.682 0z"/>
+   <glyph unicode="5" horiz-adv-x="556" d="M44.0123 183.845l136.998 14.1747c4.00434,-31.0071 15.5213,-55.671 34.6925,-73.85 19.313,-18.1436 41.4963,-27.1445 66.6564,-27.1445 28.6683,0 53.0132,11.6587 72.8578,35.1532 19.8091,23.4945 29.8022,58.8249 29.8022,106.026 0,44.3313 -9.81595,77.5 -29.6605,99.6479 -19.6673,22.1833 -45.3235,33.1687 -77.0039,33.1687 -39.5119,0 -75.0194,-17.3285 -106.345,-51.9856l-110.988 15.9819 69.9874 372.049 363.049 0 0 -127.997 -258.865 0 -21.6872 -121.867c30.511,15.1669 61.837,22.8566 93.8717,22.8566 60.9865,0 112.653,-22.1833 155,-66.6918 42.4886,-44.3313 63.6797,-102.022 63.6797,-173.002 0,-59.1792 -17.1868,-111.838 -51.3477,-158.366 -46.6701,-63.3253 -111.342,-95.0057 -194.016,-95.0057 -66.1602,0 -120.166,17.8246 -161.839,53.3322 -41.8507,35.6847 -66.6918,83.347 -74.8422,143.518z"/>
+   <glyph unicode="G" horiz-adv-x="777" d="M406.033 263.011l0 121.016 311.028 0 0 -285.69c-30.1566,-29.4833 -73.9917,-55.3166 -131.505,-77.8189 -57.3365,-22.3605 -115.524,-33.5231 -174.526,-33.5231 -74.8422,0 -140.01,15.663 -195.681,47.1662 -55.4938,31.5032 -97.3445,76.6849 -125.339,135.191 -27.995,58.5059 -41.9924,122.327 -41.9924,191.181 0,74.665 15.663,141.002 46.8118,199.189 31.3614,58.0098 77.0039,102.66 137.211,133.667 45.9968,23.8489 102.979,35.6847 171.336,35.6847 88.8397,0 158.331,-18.6751 208.332,-56.0254 49.8594,-37.492 82.0359,-88.9814 96.3523,-155l-144.015 -27.0027c-9.99314,35.1532 -28.9872,63.0064 -56.8404,83.5242 -27.676,20.3052 -62.3331,30.4755 -104.007,30.4755 -63.0064,0 -113.185,-19.9863 -150.358,-60.1714 -37.1376,-40.1497 -55.8127,-99.6833 -55.8127,-178.494 0,-85.1897 18.8169,-149.011 56.486,-191.535 37.8464,-42.4886 87.1742,-63.8214 148.373,-63.8214 30.1566,0 60.4904,5.9888 90.8242,17.8246 30.511,11.8358 56.5215,26.3294 78.3505,43.339l0 90.8242 -165.029 0z"/>
+   <glyph unicode="a" horiz-adv-x="556" d="M174.029 359.044l-124.028 22.0062c13.9975,50.639 38.1653,88.1664 72.3262,112.511 34.1964,24.3095 85.0125,36.4998 152.378,36.4998 61.1637,0 106.842,-7.19364 136.821,-21.6872 29.8377,-14.4936 51.0288,-32.8143 63.1836,-55.1749 12.1548,-22.3251 18.3208,-63.1481 18.3208,-122.823l-1.98445 -160.032c0,-45.5007 2.16164,-79.1655 6.48491,-100.853 4.35871,-21.6518 12.5091,-44.8274 24.5222,-69.4913l-136.006 0c-3.50823,9.00091 -8.00868,22.3251 -13.1824,40.008 -2.16164,8.15043 -3.82716,13.5014 -4.81939,15.9819 -23.3528,-22.9984 -48.3356,-40.1497 -75.0194,-51.6666 -26.6838,-11.4815 -54.9977,-17.3285 -85.1897,-17.3285 -53.155,0 -95.1474,14.4936 -125.836,43.5162 -30.6527,28.8454 -45.9968,65.4869 -45.9968,109.818 0,29.1998 7.01646,55.3521 21.0139,78.3505 13.9975,22.8566 33.4876,40.5041 58.8249,52.6943 25.16,12.1548 61.518,22.8212 109.003,31.9993 63.9986,11.9776 108.507,23.3173 133.171,33.6648l0 13.8203c0,26.6838 -6.48491,45.6779 -19.4902,57.1948 -13.147,11.3043 -37.8464,16.9742 -73.9917,16.9742 -24.5222,0 -43.5162,-4.81939 -57.1948,-14.6708 -13.8203,-9.63877 -24.8057,-26.8256 -33.3105,-51.3123zm183.987 -111.023c-17.4703,-5.84705 -45.3235,-12.8281 -83.4888,-21.0139 -37.9881,-8.15043 -63.0064,-16.1591 -74.665,-23.8134 -17.8601,-12.8281 -26.861,-28.8454 -26.861,-48.3356 0,-19.3484 7.19364,-35.8619 21.5101,-49.8594 14.3518,-13.9975 32.4954,-20.9785 54.6788,-20.9785 24.6639,0 48.3356,8.15043 70.8379,24.3095 16.5135,12.5091 27.4988,27.4988 32.6726,45.5007 3.50823,11.6941 5.3155,34.0192 5.3155,66.869l0 27.3217z"/>
+   <glyph unicode="l" horiz-adv-x="277" d="M72.0073 0l0 716.069 136.998 0 0 -716.069 -136.998 0z"/>
+   <glyph unicode="o" horiz-adv-x="610" d="M40.008 265.846c0,45.6779 11.1625,89.8674 33.6648,132.533 22.5023,42.8429 54.3244,75.3383 95.5018,97.8406 41.1774,22.5023 87.0324,33.842 137.849,33.842 78.5276,0 142.668,-25.5144 192.846,-76.5077 50.1783,-51.1705 75.1966,-115.524 75.1966,-193.52 0,-78.6694 -25.3372,-143.873 -75.8699,-195.539 -50.639,-51.6666 -114.319,-77.5 -191.181,-77.5 -47.4851,0 -92.844,10.8436 -136.006,32.3537 -42.9847,21.4746 -75.8344,52.9778 -98.3367,94.6513 -22.5023,41.5318 -33.6648,92.1707 -33.6648,151.846zm141.002 -7.33539c0,-51.4895 12.1902,-91.0013 36.4998,-118.323 24.5222,-27.4988 54.5016,-41.1774 90.3635,-41.1774 35.6493,0 65.6641,13.6786 89.8319,41.1774 24.1678,27.3217 36.3226,67.1525 36.3226,119.351 0,50.8162 -12.1548,90.0091 -36.3226,117.331 -24.1678,27.4988 -54.1827,41.1774 -89.8319,41.1774 -35.8619,0 -65.8413,-13.6786 -90.3635,-41.1774 -24.3095,-27.3217 -36.4998,-66.8335 -36.4998,-118.358z"/>
+   <glyph unicode="p" horiz-adv-x="610" d="M68.0029 519.041l128.033 0 0 -76.1534c16.6552,25.9751 38.9803,46.989 67.3297,63.1481 28.3139,16.0174 59.8171,24.0261 94.3324,24.0261 60.1714,0 111.342,-23.6717 153.334,-71.0151 42.0279,-47.1662 63.0064,-113.185 63.0064,-197.524 0,-86.8552 -21.1557,-154.185 -63.5025,-202.343 -42.3114,-48.1939 -93.6591,-72.1845 -154.008,-72.1845 -28.6683,0 -54.6788,5.66987 -77.9961,17.1868 -23.1756,11.3043 -47.8395,30.8299 -73.4956,58.5059l0 -259.715 -137.034 0 0 716.069zm135.014 -251.529c0,-58.5059 11.5169,-101.668 34.6571,-129.663 23.0338,-27.8532 51.1705,-41.8507 84.1975,-41.8507 31.8221,0 58.3287,12.8281 79.4844,38.5196 21.1911,25.6561 31.6804,67.684 31.6804,126.19 0,54.6433 -10.8436,95.1474 -32.6726,121.654 -21.6518,26.5066 -48.6545,39.6891 -80.831,39.6891 -33.5231,0 -61.3409,-13.0053 -83.347,-39.0158 -22.1479,-26.0105 -33.1687,-64.4947 -33.1687,-115.524z"/>
+   <glyph unicode="ã" horiz-adv-x="556" d="M174.029 359.044l-124.028 22.0062c13.9975,50.639 38.1653,88.1664 72.3262,112.511 34.1964,24.3095 85.0125,36.4998 152.378,36.4998 61.1637,0 106.842,-7.19364 136.821,-21.6872 29.8377,-14.4936 51.0288,-32.8143 63.1836,-55.1749 12.1548,-22.3251 18.3208,-63.1481 18.3208,-122.823l-1.98445 -160.032c0,-45.5007 2.16164,-79.1655 6.48491,-100.853 4.35871,-21.6518 12.5091,-44.8274 24.5222,-69.4913l-136.006 0c-3.50823,9.00091 -8.00868,22.3251 -13.1824,40.008 -2.16164,8.15043 -3.82716,13.5014 -4.81939,15.9819 -23.3528,-22.9984 -48.3356,-40.1497 -75.0194,-51.6666 -26.6838,-11.4815 -54.9977,-17.3285 -85.1897,-17.3285 -53.155,0 -95.1474,14.4936 -125.836,43.5162 -30.6527,28.8454 -45.9968,65.4869 -45.9968,109.818 0,29.1998 7.01646,55.3521 21.0139,78.3505 13.9975,22.8566 33.4876,40.5041 58.8249,52.6943 25.16,12.1548 61.518,22.8212 109.003,31.9993 63.9986,11.9776 108.507,23.3173 133.171,33.6648l0 13.8203c0,26.6838 -6.48491,45.6779 -19.4902,57.1948 -13.147,11.3043 -37.8464,16.9742 -73.9917,16.9742 -24.5222,0 -43.5162,-4.81939 -57.1948,-14.6708 -13.8203,-9.63877 -24.8057,-26.8256 -33.3105,-51.3123zm183.987 -111.023c-17.4703,-5.84705 -45.3235,-12.8281 -83.4888,-21.0139 -37.9881,-8.15043 -63.0064,-16.1591 -74.665,-23.8134 -17.8601,-12.8281 -26.861,-28.8454 -26.861,-48.3356 0,-19.3484 7.19364,-35.8619 21.5101,-49.8594 14.3518,-13.9975 32.4954,-20.9785 54.6788,-20.9785 24.6639,0 48.3356,8.15043 70.8379,24.3095 16.5135,12.5091 27.4988,27.4988 32.6726,45.5007 3.50823,11.6941 5.3155,34.0192 5.3155,66.869l0 27.3217zm-178.991 337.038l-63.0064 0c-0.354367,7.51257 -0.496113,13.3242 -0.496113,17.5057 0,34.1609 8.32761,60.4904 24.9828,78.8466 16.5135,18.4979 38.0235,27.6406 63.9986,27.6406 11.5169,0 22.0062,-1.16941 31.8576,-3.64998 9.81595,-2.516 27.676,-9.49702 53.5094,-21.0139 25.9751,-11.4815 46.174,-17.3285 60.9865,-17.3285 10.3475,0 18.994,3.33105 26.0105,9.85139 7.1582,6.66209 11.5169,17.6475 13.5014,33.1687l63.0064 0c-0.31893,-44.5084 -8.5048,-76.1888 -24.4867,-95.36 -16.1946,-19.1712 -36.8541,-28.6683 -62.1913,-28.6683 -11.1625,0 -22.0062,1.16941 -32.6726,3.50823 -7.51257,1.98445 -26.1523,9.00091 -55.9899,20.8368 -30.0148,11.8358 -51.6666,17.6475 -65.3452,17.6475 -10.4893,0 -18.4979,-3.15386 -24.345,-9.63877 -5.9888,-6.34316 -9.00091,-17.5057 -9.31984,-33.3459z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID1") format(svg)}
+    @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .str0 {stroke:black;stroke-width:2;stroke-miterlimit:22.9256}
+    .fil5 {fill:none}
+    .fil4 {fill:black}
+    .fil1 {fill:#1D3557}
+    .fil3 {fill:#787878}
+    .fil2 {fill:#D8D8D8}
+    .fil0 {fill:#F4F4F4}
+    .fnt1 {font-weight:normal;font-size:33.33px;font-family:'Arial'}
+    .fnt0 {font-weight:bold;font-size:33.33px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Gapões">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0 str0" d="M619.64 399.92c40.16,14.06 110.16,18.06 133.09,1.19 72.02,-53.01 4.07,-54.13 13.35,-97.47 5.09,-23.8 26.03,-28.92 35.89,-53.57 6.83,-17.09 -15.07,-36.73 -8.72,-51 10.55,-16.09 34.55,-14.09 39.93,-65.63 114.62,8.54 218.03,2.29 327.05,3.44 69.57,5.1 151.57,27.1 220.37,107.48 157.21,172.62 319.21,253.62 434.49,454.04l-1028.63 -1.68 -10.11 15.16 -38.72 0.08 0.45 -15.24 -605.03 0 18.4 -294.96 468.19 -1.84z"/>
+  <path class="fil1" d="M714.66 657.39l2.14 -6.41 22 0 2.83 5.36 -11.32 16.52 -4.99 0 -10.66 -15.47zm136.39 -109.91l-10.89 16.95 -1.93 11.45 -57.48 86.09c-1.88,1.95 -3.63,0.29 -2.5,-1.77l57.34 -86.46 -0.43 -2.98 -34.25 -22.27 -0.11 -28.51c0,-4 5,-3 8.38,-0.6l41.87 28.1zm-114.74 -39.83l4.15 3 0.21 15.31 -14.95 -18.23 -4.4 3.43 4.3 5.52 -4.3 3.35 4.3 5.52 -3.53 2.75 4.21 5.18 -4 4 4 5 -3 4 4 6 -5 3 4 4 -3 5 3 5 -3 4 3 4 -3 5 2.87 5.21 -2.87 3.79 3.78 3.35 -3.78 4.65 3 5 -3 4 4 5 -4.97 3.55 3.29 6.09 -3.32 3.36 13.88 19.23 -29.09 -0.32 -2.54 -3.1 -0.08 -17.31 14.96 19.17 3.91 -4.05 -3.82 -4.89 3.61 -4.26 -3.61 -4.61 2.78 -3.86 -2.68 -5.09 2.68 -3.91 -2.68 -4.96 2.68 -4.04 -4 -5 4.97 -4.02 -3.65 -4.68 3.75 -3.77 -4.07 -5.53 3.74 -4.05 -3.64 -4.36 3.9 -3.59 -3.68 -5.31 3.49 -4.12 -4.81 -4.57 5.04 -4.27 -3.72 -4.78 3.68 -4.15 -5 -4.8 4.64 -4.53 -20.64 -25.47 34.01 0.17zm139.07 44.04l-74.35 108.44 -8.74 -5.83 73.01 -109.35 10.08 6.74zm-83.08 -43.21l-8.73 0.15 0 103.12 7.73 -0.27 -17.54 32.03 -0.78 -0.88 9.32 -16.86 0 -11.26 -4.04 -3.72 3.74 -5.15 -4.11 -3.62 4.33 -5.92 -4.33 -3.36 4.41 -6.08 -4.41 -3.2 4.41 -6.08 -4.41 -3.21 4.33 -5.92 -4.33 -3.36 4.41 -6.08 -4.41 -3.2 4.41 -6.08 -3.73 -4.14 3.73 -5.14 -5 -3.77 5 -5.51 -4.08 -3.66 3.73 -5.14 -3.72 -4.17 4.07 -5.6 -5 -3.92 4.11 -4.21 -8.07 -6.67c-38.57,0.04 -80.46,-0.16 -119.04,-0.12 -5,0 -14.47,10.06 -14.95,16.14l-0.65 96.94 23.6 -0.08 0 54 -18.21 -0.14 0 26.71 91.21 1.43 4 3 -606.25 1.24 18.4 -294.96 5.28 269.97 17.65 11.05 231.75 0 12.27 5.46 207.32 -0.18 9.58 -10.58 1 -161c0,-11 8,-21 19.35,-21.52l118.19 0.82 18.46 12.7zm-102.35 163.2l6.89 -18.4 4.82 0.22 12.57 18.22 -2.49 4.75 -19.2 0 -2.59 -4.79zm142.27 -453.13l24.03 -22.43 311.05 1.36 51.01 9 48.99 21 33.7 24.67 279.52 251.84 57.57 60.74 57.19 70.52 43.13 61.47 -199.91 -1.45 91.07 -135.91 -50.23 -53.18 -150.86 -132.73 -260.19 -172.48 -232.07 1.28 -107.37 162.25 -69.55 104.98 -69.68 -2.44c-5.4,-6.39 -43.32,-57.56 -60.06,-64.01 20.74,8.45 41.74,36.45 50.17,44.77 37.28,-0.54 62.57,1.68 104.61,-23.06 9.57,-15.49 22.45,-33.51 32.02,-49 7.08,-9.33 7.94,-39.26 -11.92,-60.29 14.78,-25.99 50.86,-45.97 27.78,-96.9z"/>
+  <polygon class="fil2" points="851.05,547.48 835.16,570.76 800.91,548.49 816.9,524.53 "/>
+  <rect class="fil2" x="638.7" y="611.76" width="21.28" height="51.39"/>
+  <polygon class="fil2" points="814.01,645.29 803.05,660.98 772.7,641.61 783.76,625.25 "/>
+  <g id="_2578535578976" data-bs-toggle="modal" data-bs-target="#modal1">
+   <rect class="fil3" x="169.33" y="423.2" width="457.39" height="251.57"/>
+   <rect id="gp1" class="fil0" x="169.95" y="446.91" width="454.98" height="204.03"/>
+   <text x="334.18" y="557.85"  class="fil18 fnt0">Galpão-1</text>
+  </g>
+  <g id="_2578535577440" data-bs-toggle="modal" data-bs-target="#modal3">
+   <path class="fil3" d="M1276.6 316.42l-154.93 -101.08 -243.07 365.11 15.68 8.9 -38.66 58.75c-6.82,9.88 1.18,24.88 11.34,24.88l173.96 -0.42 235.68 -356.14z"/>
+   <polygon class="gp3" points="1255.72,302.6 1121.67,215.34 878.6,580.45 1014.32,668.81 "/>
+   <g transform="matrix(0.560029 -0.828473 0.828473 0.560029 172.871 1077.63)">
+    <text x="960" y="400"  class="fil19 fnt0">Galpão</text>
+    <text x="1072.99" y="400"  class="fil19 fnt0">-3</text>
+   </g>
+  </g>
+  <g id="_2578535579408" data-bs-toggle="modal" data-bs-target="#modal5">
+   <path class="fil3" d="M1612.84 558.12l-112.41 -74.39c-39.87,60.26 -79.75,120.52 -119.63,180.78 -6,9.47 2,20.47 11.13,20.69l138.04 -1.21 82.87 -125.87z"/>
+   <polygon class="gp5" points="1612.84,558.12 1520.81,497.22 1417.39,653.17 1466.16,683.99 1529.97,683.99 "/>
+   <g transform="matrix(0.560029 -0.828473 0.828473 0.560029 620.071 1242.47)">
+    <text x="960" y="400"  class="fil22 fnt0">Galpão</text>
+    <text x="1072.99" y="400"  class="fil22 fnt0">-5</text>
+   </g>
+  </g>
+  <g id="_2578535567024" data-bs-toggle="modal" data-bs-target="#modal4">
+   <path class="fil3" d="M1480.92 438.58l-159.37 -105.46c-69.27,104.68 -138.55,209.36 -207.83,314.04 -16.92,22.82 -2.92,35.82 10.28,35.62l194.67 -1.22 162.25 -242.98z"/>
+   <polygon class="gp4" points="1480.92,438.58 1341.28,346.32 1150.26,635.89 1219.28,681.56 1318.67,681.56 "/>
+   <g transform="matrix(0.560029 -0.828473 0.828473 0.560029 410.872 1168.63)">
+    <text x="960" y="400"  class="fil21 fnt0">Galpão</text>
+    <text x="1072.99" y="400"  class="fil21 fnt0">-4</text>
+   </g>
+  </g>
+  <g id="_2578535566016" data-bs-toggle="modal" data-bs-target="#modal2">
+   <polygon id="gapão2" class="fil3" points="1039.77,231.7 846.8,523.98 771.04,473.82 945.12,212.97 1011.56,211.76 "/>
+   <polygon id="gp2" class="fil0" points="1012.33,231.17 827.26,509.56 771.04,473.82 945.12,212.97 984.83,212.97 "/>
+   <g transform="matrix(0.560029 -0.828473 0.828473 0.560029 -16.9299 1004.47)">
+    <text x="960" y="400"  class="fil19 fnt0">Galpão</text>
+    <text x="1072.99" y="400"  class="fil19 fnt0">-2</text>
+   </g>
+  </g>
+  <text x="378.14" y="723.58"  class="fil4 fnt1">Conv</text>
+  <text x="480.03" y="723.58"  class="fil4 fnt1">ência</text>
+  <text x="455.95" y="723.58"  class="fil4 fnt1">iv</text>
+  <polyline class="fil5 str0" points="376.8,729.98 570.3,729.98 646.8,647.98 "/>
+  <ellipse class="fil5 str0" cx="646.8" cy="647.98" rx="6.58" ry="7.16"/>
+  <polyline class="fil5 str0" points="1160.38,773.98 916.97,773.89 793.8,646.98 "/>
+
+  <text x="916.14" y="768.58"  class="textGua fnt1">Guarita/Balança</text>
+  <ellipse class="linhaGua str0" cx="793.8" cy="646.98" rx="6.58" ry="7.16"/>
+  <polyline class="linhaGua str0" points="426.8,323.98 658.1,323.98 825.98,547.65 "/>
+
+
+  <text x="435.14" y="311.58"  class="fil4 fnt1">Administrativo</text>
+  <ellipse class="fil5 str0" cx="825.98" cy="547.65" rx="6.58" ry="7.16"/>
+ </g>
+</svg>
+    
         
+        
+      </div>
       
+
+
     </div>
-    <div class="footer row">
-          
-          <div class="copy row"><a  href="tel:+5541992764459">&copy Marcelo Olimpio </a></div>
-          <div class="footerCont row">
-            <div class="titulo1">LOGSUL</div>
-          <div id="rodape" class="rodape">PREMOAÇO</div>
-        </div> 
-          
+     <div id="infoTec" class="container-fluid infoTec cont">
+      <div class="space"></div>
+      <p class="h1">INFORMAÇÕES TÉCNICAS</p>
+
+
     </div>
+     <div id="caracter" class="container-fluid caracter cont">
+      <div class="space"></div>
+      <p class="h1">CARACTERÍSTICAS</p>
+
+
+    </div>
+    <div id="contato" class="container-fluid contato cont">
+      <div class="space"></div>
+      <p class="h1">CONTATO</p>
+
+
+    </div>
+
+
+
+
+
+  <script src="./js/bootstrap.min.js"></script> 
+  <script src="./js/main.js"></script>
 </body>
-<script src="./js/main.js" defer></script>
 </html>

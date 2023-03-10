@@ -11,24 +11,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 4px;       
     /*border: 3px solid #E63946;*/  
 }  
-    
-
-*{
-                        padding: 0;
-                        margin: 0;
-                        border: 0;
-                        font-family:Helvetica;
-
-                                      
-                          
-                            
-                          
-                          
-                           
-                            
-                                   
-                        
-                       
+*{                      
 --cor1:    #E63946;
 --cor1-90: #E94D59;
 --cor1-80: #EB616B;
@@ -62,41 +45,218 @@ body::-webkit-scrollbar-thumb{
 --cor4-10: #EDF2F6;
 --cor5-10: #E9EBEF;
 }
+.h1{
+    color: #1D3557;
+}
+.space{
+    height: 10vh;
+    width: 50vw;
+    
+    
+}
+.cont{
+        width: 100vw;
+        border-bottom: #1D3557 5px solid;
+}
 
-.container{
-   
+.navbar{
+    position:fixed; 
+    z-index: 12;
     width: 100vw;
+    background-color: transparent;
+    color: #1D3557;
+    height: 8vh ;
+}
+#barraStatus{
+    position: fixed;
+    z-index: 13;
+    top: 8vh ;
+    height: 2px;
+    width: 5px;
+    background-color: #E63946;
+    opacity: 0.5;
+}
+.logo{
+    width: auto;
+    height:5vh;
+}
+.ico{
+    width: 3vw;
+    margin-right: 2vw;
+}
+
+.box2{
+    background-color: var(--cor4-50);
+}
+.porque{
+    background-color: #D4EDEE;
+    
+}
+.local{
+background-image:url('../img/mapa.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-color: #9CC0FA;
+}
+.local1{
+    
+    height: 60vh;
+}
+.acesso{
+background-image: url('../img/mapa2.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-color: #ffffff;
+}
+
+.acessoLinha1,.acessoLinha2{
+width:6vw;
+height: 5px;
+}
+.acessoLinha1{
+background-color: var(--cor1);
+}
+.acessoLinha2{
+    background-color: var(--cor5);
+}
+
+.planta{
+    background-color: #EDF2F6;
+    
+}
+.plantaTxt{
+    color: #D4EDEE;
+}
+/*Botões do mapa----------*/
+/*galpão 1----------*/
+#gp1{
+   fill: #ffffff; 
+   stroke: #1D3557;
+}
+.fil18{
+    fill:#1D3557;
+    transition: 2s;
+}
+#_2578535578976{
+    cursor: pointer;
+}
+#_2578535578976:hover #gp1{
+    transition: 500ms;
+    fill: #1D3557;
+    stroke: #ffffff;
+    
+}
+#_2578535578976:hover .fil18{
+    fill: #ffffff;
+    
+}
+/*galpão 1----------*/
+/*galpão 2----------*/
+#gp2{
+fill: #ffffff;
+stroke: #1D3557;
+}
+.fil19{
+    fill:#1D3557;
+    transition: 2s;
+}
+#_2578535566016{
+    cursor: pointer;
+}
+#_2578535566016:hover #gp2{
+    fill: #1D3557;
+    stroke: #ffffff;
+    transition: 500ms;
+    
+}
+#_2578535566016:hover .fil19{
+    fill: #ffffff;
+    
+}
+/*galpão 2----------*/
+/*galpão 3----------*/
+.gp3{
+   fill: #ffffff; 
+   stroke: #1D3557;
+}
+.fil20{
+    fill:#1D3557;
+    transition: 2s;
+}
+#_2578535577440{
+    cursor: pointer;
+}
+#_2578535577440:hover .gp3{
+    fill: #1D3557;
+    transition: 500ms;
+    stroke: #ffffff;
+    
+}
+#_2578535577440:hover .fil19{
+    fill: #ffffff;
+    
+}
+/*galpão 3----------*/
+/*galpão 4----------*/
+.gp4{
+   fill: #ffffff; 
+   stroke: #1D3557;
+}
+.fil21{
+    fill:#1D3557;
+    transition: 2s;
+}
+#_2578535567024{
+    cursor: pointer;
+}
+#_2578535567024:hover .gp4{
+    fill: #1D3557;
+    transition: 500ms;
+    stroke: #ffffff;
+    
+}
+#_2578535567024:hover .fil21{
+    fill: #ffffff;
+    
+}
+/*galpão 4----------*/
+/*galpão 5----------*/
+.gp5{
+   fill: #ffffff; 
+   stroke: #1D3557;
+}
+.fil22{
+    fill:#1D3557;
+    transition: 2s;
+}
+#_2578535579408{
+    cursor: pointer;
+}
+#_2578535579408:hover .gp5{
+    fill: #1D3557;
+    transition: 500ms;
+    stroke: #ffffff;
+    
+}
+#_2578535579408:hover .fil22{
+    fill: #ffffff; 
+}
+/*galpão 5----------*/
+/*guarita----------*/
+.textGua{
+   fill: #1D3557;
+}
+.linhaGua{
+   display: none;
    
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-col{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.titulo{
-    position: relative;
-    top:90vh;
-    justify-content: end;
-    right: 5vw;
-    text-align: right;
-    
     
 }
-    .titulo1{
-        font-size: 1.8vw;
-        color: #E63946;
-        font-weight: 600;
-    }
-    .titulo2{
-        font-size: 1.vw;
-        margin-left: 1vw;
-        color: #344A68;
-        font-weight: bold;
-    }
+
+/*guarita----------*/
+
+
+
+
+
+
+
